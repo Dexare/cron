@@ -1,4 +1,4 @@
-<img src="https://get.snaz.in/88HByqU.png" height="50">
+<img src="https://get.snaz.in/4jpcPBF.png" height="50">
 
 A [Dexare](https://github.com/Dexare/Dexare) module for managing [crons](https://npm.im/cron).
 

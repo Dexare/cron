@@ -30,7 +30,7 @@ arr = futureChangelog
   .split('\n')
   .map((line) =>
     line.startsWith('[Unreleased]')
-      ? `[Unreleased]: https://github.com/Dexare/logger/compare/v${currentVersion}...HEAD`
+      ? `[Unreleased]: https://github.com/Dexare/cron/compare/v${currentVersion}...HEAD`
       : line
   );
 
@@ -38,7 +38,7 @@ arr = futureChangelog
 const lastVersion = ([...arr].reverse()[1].match(/\[([^\][]*)]/) || [])[0].replace(/[[\]']+/g, '');
 if (!lastVersion) throw new Error("Can't find last version in changelog.");
 
-const lastLine = `[${currentVersion}]: https://github.com/Dexare/logger/compare/v${lastVersion}...v${currentVersion}`;
+const lastLine = `[${currentVersion}]: https://github.com/Dexare/cron/compare/v${lastVersion}...v${currentVersion}`;
 if (arr[arr.length - 1] === '') arr[arr.length - 1] = lastLine;
 else arr.push(lastLine);
 futureChangelog = arr.join('\n');
