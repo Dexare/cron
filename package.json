@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "cron": "^2.0.0",
-    "dexare": "^2.0.1"
+    "dexare": "^3.0.0"
   },
   "devDependencies": {
     "@types/cron": "^2.0.0",
